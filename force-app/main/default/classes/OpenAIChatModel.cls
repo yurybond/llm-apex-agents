@@ -2,7 +2,7 @@ public class OpenAIChatModel implements ChatModel.I {
   private static final String ENDPOINT = 'https://api.openai.com/v1/';
 
   private string apiKey;
-  public string model = 'gpt-4'; // 'gpt-4' | 'gpt-3.5-turbo'
+  public string model = 'gpt-3.5-turbo'; // 'gpt-4' | 'gpt-3.5-turbo'
   public Decimal tempature = 0.0;
   public Integer maxTokens = 2000;
   public string namedCrediential = 'OpenAI';

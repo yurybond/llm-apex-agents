@@ -42,7 +42,7 @@ public without sharing class AgentLogController {
   @AuraEnabled
   public static string runAgent(string objective) {
     OpenAIChatModel chatLLM = new OpenAIChatModel();
-    chatLLM.model = 'gpt-4';
+    chatLLM.model = 'gpt-3.5-turbo';
 
     OpenAIChatModel fastLLM = new OpenAIChatModel();
     fastLLM.model = 'gpt-3.5-turbo';
