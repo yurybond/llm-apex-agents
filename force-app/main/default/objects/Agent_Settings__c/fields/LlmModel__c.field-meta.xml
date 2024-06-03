@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>LlmModel__c</fullName>
+    <defaultValue>&apos;gpt-3.5-turbo&apos;</defaultValue>
     <description>Name of LLM Model to use, for instance: &apos;gpt-4&apos; or &apos;gpt-3.5-turbo&apos;</description>
     <externalId>false</externalId>
     <inlineHelpText>Name of LLM Model to use, for instance: &apos;gpt-4&apos; or &apos;gpt-3.5-turbo&apos;</inlineHelpText>
