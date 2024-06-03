@@ -42,10 +42,10 @@ public without sharing class AgentLogController {
   @AuraEnabled
   public static string runAgent(string objective) {
     OpenAIChatModel chatLLM = new OpenAIChatModel();
-    chatLLM.model = 'gpt-3.5-turbo';
+    chatLLM.model =  Agent_Settings__c.getInstance().LlmMOdel__c; //'gpt-3.5-turbo';
 
     OpenAIChatModel fastLLM = new OpenAIChatModel();
-    fastLLM.model = 'gpt-3.5-turbo';
+    fastLLM.model = Agent_Settings__c.getInstance().LlmMOdel__c; //'gpt-3.5-turbo';
 
     Map<String, IAgentTool> tools = new Map<String, IAgentTool>{
       'find_records' => new SOSLSearchAgentTool(),
