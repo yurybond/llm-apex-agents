@@ -12,7 +12,7 @@ public class OpenAiApiService {
 
         HttpResponse response = new Http().send(request);
         
-        Assert.areEqual(response.getStatusCode(),200, 'OpenAI API returned status code ' + response.getStatusCode());
+        Assert.isTrue(response.getStatusCode() <= 399, 'OpenAI API returned status code ' + response.getStatusCode());
         
         return response.getBody();
         
